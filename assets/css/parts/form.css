@@ -1,0 +1,259 @@
+.form_container {
+    position: relative;
+    padding: 30px;
+    width: 80%;
+    min-height: 600px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.success_container {
+    position: relative;
+    padding: 30px;
+    width: 400px;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.success_container > img {
+    width: 130px;
+    height: 130px;
+}
+
+.success_container > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form_header {
+    position: relative;
+    color: #fff;
+    font-family: "Roboto New";
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 40px;
+}
+
+.form_header:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.form_error {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: red;
+}
+
+.form_error > span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form_template {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.form_line {
+    display: flex;
+    gap: 0 20px;
+}
+
+.form_block {
+    flex: 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_block > label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form_block > input,
+.form_block > textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: rgb(0, 121, 194);
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form_block > textarea {
+    height: 100px;
+}
+
+.form_block > input::placeholder,
+.form_block > textarea::placeholder {
+    color: rgb(0, 121, 194);
+}
+
+.form_btn {
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form_btn:hover {
+    background-color: rgb(0, 121, 194);
+}
+
+.form_container .select2-container {
+    width: 100% !important; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form_block.place_space {
+    max-width: 300px;
+}
+
+.form_block.current_place label,
+.form_block.division label,
+.form_block.title_pipeline label {
+    height: 60px;
+}
+
+.form_block.place_space label,
+.form_block.date label {
+    width: 100%;
+    text-align: center;
+}
+
+.form_block.place_space > .many_inputs,
+.form_block.date > .many_inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_block.place_space > .many_inputs > .form_block {
+    max-width: 130px;
+}
+
+.form_block.date > .many_inputs > .form_block {
+    max-width: 140px;
+}
+
+.form_block.current_place {
+    max-width: 150px;
+}
+
+.form_block.division {
+    max-width: 250px;
+}
+
+.join_container {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    overflow-y: auto;
+}
+
+.join_container .join_line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 3px 0;
+    padding: 0 10px;
+}
+
+.join_line > span {
+    text-align: center;
+}
+
+.join_line .title_pipeline {
+    width: 550px;
+}
+
+.join_line .title_division,
+.join_line .current {
+    width: 100px;
+}
+
+.join_line .date {
+    width: 150px;
+}
+
+.join_line .note {
+    width: 400px;
+}
+
+.join_line .btn {
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.join_line .btn:hover {
+    background-color: rgb(0, 121, 194);
+}

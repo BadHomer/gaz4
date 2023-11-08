@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sectionBg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+.colorBg {
+    position: absolute;
+    filter: blur(150px);
+}
+
+.colorBg:nth-child(1) {
+    top: -150px;
+    width: 600px;
+    height: 600px;
+    background-color: #d4aabf;
+}
+
+.colorBg:nth-child(2) {
+    bottom: 100px;
+    right: 150px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(0, 121, 194);
+}
+
+.colorBg:nth-child(3) {
+    bottom: 0;
+    left: 150px;
+    width: 600px;
+    height: 600px;
+    background-color: #3e92a5;
+}
+
+.select2-selection__arrow {
+    top: 11px !important;
+    right: 20px !important;
+}
+
+.select2-selection--single {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.select2-selection__rendered {
+    color: #fff !important;
+}
+
+.select2-dropdown {
+    background-color: #fffbfb !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.select2-search.select2-search--dropdown {
+    display: none !important;
+}
+
+.select2-results__option {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.select2-results__option:hover {
+    background-color: rgb(0, 121, 194) !important;
+}
+
+.select2-results__option--selected {
+    background-color: rgb(0, 121, 194) !important;
+    color: #fff !important;
+}
+
+.main_table::-webkit-scrollbar {
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,.5);
+}
